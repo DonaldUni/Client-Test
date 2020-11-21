@@ -7,7 +7,7 @@ public class Client extends Thread {
     public void run(){
 
         try{
-            Socket socket = new Socket("debby.vs.uni-due.de", 2223);
+            Socket socket = new Socket("localhost", 3000);
 
             BufferedReader socketReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             BufferedWriter socketWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
